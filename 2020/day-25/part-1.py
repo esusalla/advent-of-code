@@ -1,6 +1,16 @@
 # Day 25, Part 1: Combo Breaker
 
 
+def transform(subject, loop_size):
+    value = 1
+
+    for _ in range(loop_size):
+        value *= subject
+        value %= 20201227
+
+    return value
+
+
 def crack(pubkey_1, pubkey_2):
     pubkeys = set([pubkey_1, pubkey_2])
 
@@ -18,16 +28,6 @@ def crack(pubkey_1, pubkey_2):
         loop_size += 1
 
     return transform(next(iter(pubkeys)), loop_size)
-
-
-def transform(subject, loop_size):
-    value = 1
-
-    for _ in range(loop_size):
-        value *= subject
-        value %= 20201227
-
-    return value
 
 
 if __name__ == "__main__":
