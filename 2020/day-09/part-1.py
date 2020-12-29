@@ -1,5 +1,6 @@
 # Day 9, Part 1: Encoding Error
 
+
 def valid(i, n):
     for j, x in enumerate(NUMS[i - 25:i]):
         for y in NUMS[i - 25 + j:i]:

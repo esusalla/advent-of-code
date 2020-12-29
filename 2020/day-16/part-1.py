@@ -1,5 +1,6 @@
 # Day 16, Part 1: Ticket Translation
 
+
 def invalid_values(ticket):
     total = 0
 

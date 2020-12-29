@@ -1,5 +1,6 @@
 # Day 14, Part 2: Docking Data
 
+
 def apply(mask, base):
     base = bin(base)[2:].zfill(36)
     base = "".join(

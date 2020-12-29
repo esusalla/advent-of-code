@@ -86,10 +86,10 @@ if __name__ == "__main__":
         current = shuffle(current, cups, nodes)
 
     # Print cups in order following number one
-    solution = ""
+    solution = []
     node = nodes[1].next_node
     while node.data != 1:
-        solution += str(node.data)
+        solution.append(str(node.data))
         node = node.next_node
 
-    print(solution)
+    print("".join(solution))

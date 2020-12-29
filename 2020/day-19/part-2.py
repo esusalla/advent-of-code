@@ -10,15 +10,16 @@ def parse_rule(rule, parsed_rules):
         if rule[-1] == '"a"' or rule[-1] == '"b"':
             parsed_rules[key] = rule[-1][1]
         else:
-            parsed = ""
+            parsed = []
             for other in rule[1:]:
                 if other == "|":
-                    parsed += other
+                    parsed.append(other)
                 elif other not in parsed_rules:
-                    parsed += parse_rule(RULES[other], parsed_rules)
+                    parsed.append(parse_rule(RULES[other], parsed_rules))
                 else:
-                    parsed += parsed_rules[other]
+                    parsed.append(parsed_rules[other])
 
+            parsed = "".join(parsed)
             if key == "8":
                 parsed_rules[key] = "(" + parsed + ")+"
             elif key == "11":
