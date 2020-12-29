@@ -73,10 +73,10 @@ def build_image(placed_tiles):
     # Iterate through each row in square and join together rows of each tile
     for row in square:
         for i in range(height):
-            img_row = ""
+            img_row = []
             for tile in row:
-                img_row += "".join(tile[i])
-            img.append(img_row)
+                img_row += tile[i]
+            img.append("".join(img_row))
 
     return img
 

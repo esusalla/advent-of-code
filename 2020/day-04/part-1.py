@@ -12,7 +12,7 @@ def is_valid(passport):
         "pid": False
     }
 
-    for field in passport.keys():
+    for field in passport:
         fields[field] = True
 
     return all(fields.values())
