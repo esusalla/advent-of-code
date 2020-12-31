@@ -1,7 +1,7 @@
 # Day 9, Part 2: Encoding Error
 
 
-def valid(i, n):
+def is_valid(i, n):
     for j, x in enumerate(NUMS[i - 25:i]):
         for y in NUMS[i - 25 + j:i]:
             if x + y == n:
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         if i < 25:
             continue
 
-        if not valid(i, n):
+        if not is_valid(i, n):
             INVALID = n
             break
 

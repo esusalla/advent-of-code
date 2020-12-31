@@ -3,7 +3,7 @@
 import math
 
 
-def valid(ticket):
+def is_valid(ticket):
     for field in ticket:
         valid = False
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
                        range(rule_2[0], rule_2[1]+1)))
 
     nearby = [[int(n) for n in grp.split(",")] for grp in GRPS[2][1:]]
-    valid = [ticket for ticket in nearby if valid(ticket)]
+    valid = [ticket for ticket in nearby if is_valid(ticket)]
     mine = [int(n) for n in GRPS[1][-1].split(",")]
 
     possible = {n: set() for n in range(20)}
