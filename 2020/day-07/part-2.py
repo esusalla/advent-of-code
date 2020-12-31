@@ -2,15 +2,13 @@
 
 
 def parse_line(line):
-    line = line.split(" bags contain ")
-
     color = line[0]
 
-    sub_bags = [sub_bag.split(" ") for sub_bag in line[1].split(", ")]
-    sub_bags = {} if sub_bags[0][0] == "no" else {
-        " ".join(sub_bag[1:3]): int(sub_bag[0])
-        for sub_bag in sub_bags
-    }
+    sub_bags_list = [sub_bag.split(" ") for sub_bag in line[1].split(", ")]
+    if sub_bags_list[0][0] == "no":
+        sub_bags = {}
+    else:
+        sub_bags = {" ".join(bag[1:3]): int(bag[0]) for bag in sub_bags_list}
 
     return (color, sub_bags)
 
@@ -22,7 +20,7 @@ def count_sub_bags(bag, count):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = INP.split("\n")
+        LINES = [line.split(" bags contain ") for line in INP.split("\n")]
 
     BAGS = dict(parse_line(line) for line in LINES)
 
