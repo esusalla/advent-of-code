@@ -37,14 +37,14 @@ if __name__ == "__main__":
 
     OFFSETS = build_offsets()
 
-    active = {Cube(x, y, 0, 0)
-              for y in range(len(GRID))
-              for x in range(len(GRID[y]))
-              if GRID[y][x] == "#"}
-    inactive = {Cube(x, y, 0, 0)
-                for y in range(len(GRID))
-                for x in range(len(GRID[y]))
-                if GRID[y][x] == "."}
+    active = set()
+    inactive = set()
+    for y in range(len(GRID)):
+        for x in range(len(GRID[0])):
+            if GRID[y][x] == "#":
+                active.add(Cube(x, y, 0, 0))
+            else:
+                inactive.add(Cube(x, y, 0, 0))
 
     for _ in range(6):
         expanded = expand(active)
