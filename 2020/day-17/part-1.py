@@ -1,20 +1,9 @@
 # Day 17, Part 1: Conway Cubes
 
 import collections
+import itertools
 
 Cube = collections.namedtuple("Cube", "x y z")
-
-
-def build_offsets():
-    offsets = []
-
-    for x in range(-1, 2):
-        for y in range(-1, 2):
-            for z in range(-1, 2):
-                offsets.append(Cube(x, y, z))
-
-    offsets.remove(Cube(0, 0, 0))
-    return offsets
 
 
 def add(fst, snd):
@@ -34,7 +23,8 @@ if __name__ == "__main__":
         INP = infile.read().strip()
         GRID = INP.split("\n")
 
-    OFFSETS = build_offsets()
+    OFFSETS = [Cube(*tup) for tup in itertools.product(range(-1, 2), repeat=3)]
+    OFFSETS.remove(Cube(0, 0, 0))
 
     active = set()
     inactive = set()
