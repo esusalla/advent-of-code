@@ -23,8 +23,8 @@ def check_sub_bags(bag):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = [line.split(" bags contain ") for line in INP.split("\n")]
 
+    LINES = [line.split(" bags contain ") for line in INP.split("\n")]
     BAGS = dict(parse_line(line) for line in LINES)
 
     count = sum(1 for bag in BAGS if check_sub_bags(bag))

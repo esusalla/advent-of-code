@@ -20,8 +20,8 @@ def count_sub_bags(bag, count):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = [line.split(" bags contain ") for line in INP.split("\n")]
 
+    LINES = [line.split(" bags contain ") for line in INP.split("\n")]
     BAGS = dict(parse_line(line) for line in LINES)
 
     count = count_sub_bags("shiny gold", 1) - 1

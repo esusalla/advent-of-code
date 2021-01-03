@@ -5,7 +5,8 @@ import functools
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = [line.split(" (contains ") for line in INP.split("\n")]
+
+    LINES = [line.split(" (contains ") for line in INP.split("\n")]
 
     ingreds_set = set()
     ingreds_list = []

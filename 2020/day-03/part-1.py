@@ -3,7 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        grid = INP.split("\n")
+
+    grid = INP.split("\n")
 
     HEIGHT = len(grid)
     WIDTH = len(grid[0])

@@ -28,7 +28,6 @@ def calc_seat_id(bp):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        BPS = INP.split("\n")
 
-    seat_id = max(calc_seat_id(bp) for bp in BPS)
+    seat_id = max(calc_seat_id(bp) for bp in INP.split("\n"))
     print(seat_id)

@@ -3,8 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        OPS = [line.split(" ") for line in INP.split("\n")]
 
+    OPS = [line.split(" ") for line in INP.split("\n")]
     OPS_COUNT = len(OPS)
 
     # Get all JMP and NOP instructions in order to check output when switched

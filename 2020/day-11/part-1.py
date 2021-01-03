@@ -15,7 +15,8 @@ def count_occupied(x, y):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        seats = [list(line) for line in INP.split("\n")]
+
+    seats = [list(line) for line in INP.split("\n")]
 
     OFFSETS = [(1, 0), (1, 1), (0, 1), (-1, 1),
                (-1, 0), (-1, -1), (0, -1), (1, -1)]

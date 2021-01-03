@@ -17,8 +17,9 @@ def play_game(deck_1, deck_2):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        DECKS = [collections.deque(int(line) for line in grp.split("\n")[1:])
-                 for grp in INP.split("\n\n")]
+
+    DECKS = [collections.deque(int(line) for line in grp.split("\n")[1:])
+             for grp in INP.split("\n\n")]
 
     player_1, player_2 = DECKS
     play_game(player_1, player_2)

@@ -23,7 +23,8 @@ def count_trees(u, v, grid):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        grid = INP.split("\n")
+
+    grid = INP.split("\n")
 
     HEIGHT = len(grid)
     SLOPES = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]

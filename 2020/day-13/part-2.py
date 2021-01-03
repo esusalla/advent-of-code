@@ -36,8 +36,8 @@ def crt(pairs):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = INP.split("\n")
 
+    LINES = INP.split("\n")
     BUSES = [(i, int(bus))
              for i, bus in enumerate(LINES[1].split(","))
              if bus != "x"]

@@ -21,8 +21,8 @@ def is_valid(passport):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        GRPS = [grp.replace("\n", " ").split(" ") for grp in INP.split("\n\n")]
 
+    GRPS = [grp.replace("\n", " ").split(" ") for grp in INP.split("\n\n")]
     PASSPORTS = [dict(field.split(":") for field in grp) for grp in GRPS]
 
     valid = sum(1 for passport in PASSPORTS if is_valid(passport))

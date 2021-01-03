@@ -3,8 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = INP.split("\n")
 
+    LINES = INP.split("\n")
     TIMESTAMP = int(LINES[0])
     BUSES = [int(bus) for bus in LINES[1].split(",") if bus != "x"]
 

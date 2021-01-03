@@ -3,7 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        ENTRIES = {int(line) for line in INP.split("\n")}
+
+    ENTRIES = {int(line) for line in INP.split("\n")}
 
     TARGET = 2020
 

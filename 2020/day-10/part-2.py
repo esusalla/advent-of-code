@@ -6,7 +6,8 @@ import math
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        PLUGS = [int(line) for line in INP.split("\n")]
+
+    PLUGS = [int(line) for line in INP.split("\n")]
 
     # Generate plug array
     arr = [0] + sorted(PLUGS) + [max(PLUGS) + 3]

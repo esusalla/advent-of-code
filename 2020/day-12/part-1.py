@@ -3,8 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        ACTIONS = [(line[0], int(line[1:])) for line in INP.split("\n")]
 
+    ACTIONS = [(line[0], int(line[1:])) for line in INP.split("\n")]
     DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]  # east, south, west, north
 
     pos = (0, 0)

@@ -24,8 +24,8 @@ def add(fst, snd):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = [parse_line(line) for line in INP.split("\n")]
 
+    LINES = [parse_line(line) for line in INP.split("\n")]
     DIRECTIONS = ["e", "w", "ne", "se", "nw", "sw"]
     OFFSETS = [(1, 0), (-1, 0), (1, -1), (0, 1), (0, -1), (-1, 1)]
 

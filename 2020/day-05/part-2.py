@@ -28,9 +28,8 @@ def calc_seat_id(bp):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        BPS = INP.split("\n")
 
-    seat_ids = sorted(calc_seat_id(bp) for bp in BPS)
+    seat_ids = sorted(calc_seat_id(bp) for bp in INP.split("\n"))
     for i, seat_id in enumerate(seat_ids[:-1]):
         if seat_ids[i + 1] - seat_id > 1:
             print(seat_id + 1)

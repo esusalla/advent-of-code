@@ -3,7 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        ACTIONS = [(line[0], int(line[1:])) for line in INP.split("\n")]
+
+    ACTIONS = [(line[0], int(line[1:])) for line in INP.split("\n")]
 
     pos = (0, 0)
     way = (10, -1)

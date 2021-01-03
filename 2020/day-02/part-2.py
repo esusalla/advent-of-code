@@ -3,7 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        LINES = [line.split(" ") for line in INP.split("\n")]
+
+    LINES = [line.split(" ") for line in INP.split("\n")]
 
     valid = 0
     for line in LINES:

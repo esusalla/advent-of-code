@@ -21,10 +21,13 @@ def expand(cubes):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        GRID = INP.split("\n")
+
+    GRID = INP.split("\n")
 
     OFFSETS = [Cube(*tup) for tup in itertools.product(range(-1, 2), repeat=4)]
     OFFSETS.remove(Cube(0, 0, 0, 0))
+
+    ROUNDS = 6
 
     active = set()
     inactive = set()
@@ -35,7 +38,7 @@ if __name__ == "__main__":
             else:
                 inactive.add(Cube(x, y, 0, 0))
 
-    for _ in range(6):
+    for _ in range(ROUNDS):
         expanded = expand(active)
         next_active = set()
 

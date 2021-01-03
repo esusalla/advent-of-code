@@ -3,7 +3,8 @@
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        OPS = [line.split(" ") for line in INP.split("\n")]
+
+    OPS = [line.split(" ") for line in INP.split("\n")]
 
     pc = 0
     acc = 0

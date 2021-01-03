@@ -31,7 +31,8 @@ def evaluate(expr):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        EXPRS = [list(line.replace(" ", "")) for line in INP.split("\n")]
 
-total = sum(int(evaluate(expr)) for expr in EXPRS)
-print(total)
+    EXPRS = [list(line.replace(" ", "")) for line in INP.split("\n")]
+
+    total = sum(int(evaluate(expr)) for expr in EXPRS)
+    print(total)

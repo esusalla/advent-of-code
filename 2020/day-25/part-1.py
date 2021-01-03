@@ -33,7 +33,8 @@ def crack(pubkey_1, pubkey_2):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        PUBKEY_1, PUBKEY_2 = (int(line) for line in INP.split("\n"))
+
+    PUBKEY_1, PUBKEY_2 = (int(line) for line in INP.split("\n"))
 
     privkey = crack(PUBKEY_1, PUBKEY_2)
     print(privkey)

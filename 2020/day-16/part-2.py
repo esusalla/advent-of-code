@@ -21,8 +21,8 @@ def is_valid(ticket):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        GRPS = [grp.split("\n") for grp in INP.split("\n\n")]
 
+    GRPS = [grp.split("\n") for grp in INP.split("\n\n")]
     NAMES, RULES = list(zip(*(line.split(": ") for line in GRPS[0])))
 
     ranges = []

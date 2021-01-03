@@ -10,7 +10,8 @@ def apply(mask, n):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        OPS = [line.split(" = ") for line in INP.split("\n")]
+
+    OPS = [line.split(" = ") for line in INP.split("\n")]
 
     mem = {}
     for left, right in OPS:

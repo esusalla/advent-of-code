@@ -119,9 +119,9 @@ def check_sea_monster(img, offsets):
 if __name__ == "__main__":
     with open("inp.txt") as infile:
         INP = infile.read().strip()
-        GRPS = [grp.split("\n") for grp in INP.split("\n\n")]
-        TILES = [Tile(int(grp[0].split(" ")[-1][:-1]), grp[1:])
-                 for grp in GRPS]
+
+    GRPS = [grp.split("\n") for grp in INP.split("\n\n")]
+    TILES = [Tile(int(grp[0].split(" ")[-1][:-1]), grp[1:]) for grp in GRPS]
 
     # Possible ways for two tiles to match and the appropriate offset for placement
     MATCHES = [((left, right), Pos(1, 0)), ((right, left), Pos(-1, 0)),
