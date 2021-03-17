@@ -19,7 +19,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <th>Rank</th>
         <th>Score</th>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>1</td>
         <td>01:00:04</td>
         <td>5976</td>
@@ -28,7 +28,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>5431</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>2</td>
         <td>00:04:56</td>
         <td>683</td>
@@ -37,7 +37,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>445</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>3</td>
         <td>00:09:19</td>
         <td>2113</td>
@@ -46,7 +46,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1391</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>4</td>
         <td>01:00:13</td>
         <td>9227</td>
@@ -55,7 +55,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>4572</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>5</td>
         <td>00:20:56</td>
         <td>3807</td>
@@ -64,7 +64,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>2662</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>6</td>
         <td>00:08:13</td>
         <td>2817</td>
@@ -73,7 +73,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1253</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>7</td>
         <td>00:12:00</td>
         <td>297</td>
@@ -82,7 +82,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>873</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>8</td>
         <td>00:04:12</td>
         <td>231</td>
@@ -91,7 +91,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1428</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>9</td>
         <td>00:14:53</td>
         <td>3744</td>
@@ -100,7 +100,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>2382</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>10</td>
         <td>00:12:58</td>
         <td>3548</td>
@@ -109,7 +109,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>42270</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>11</td>
         <td>00:29:39</td>
         <td>2267</td>
@@ -118,7 +118,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1520</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>12</td>
         <td>00:17:19</td>
         <td>2286</td>
@@ -127,7 +127,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>2418</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>13</td>
         <td>02:14:35</td>
         <td>9121</td>
@@ -136,7 +136,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>3828</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>14</td>
         <td>00:08:10</td>
         <td>169</td>
@@ -145,7 +145,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>394</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>15</td>
         <td>00:19:08</td>
         <td>1930</td>
@@ -154,7 +154,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>864</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>16</td>
         <td>00:10:35</td>
         <td>468</td>
@@ -163,7 +163,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1569</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>17</td>
         <td>01:20:31</td>
         <td>3408</td>
@@ -172,7 +172,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>17616</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>18</td>
         <td>00:35:52</td>
         <td>1867</td>
@@ -181,7 +181,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>3110</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>19</td>
         <td>00:45:27</td>
         <td>1218</td>
@@ -190,7 +190,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1026</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>20</td>
         <td>02:03:56</td>
         <td>2625</td>
@@ -199,7 +199,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>899</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>21</td>
         <td>00:09:48</td>
         <td>56</td>
@@ -208,7 +208,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>201</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>22</td>
         <td>00:04:42</td>
         <td>120</td>
@@ -217,7 +217,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>2367</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>23</td>
         <td>00:54:48</td>
         <td>2302</td>
@@ -226,7 +226,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>9337</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>24</td>
         <td>00:27:35</td>
         <td>1624</td>
@@ -235,7 +235,7 @@ This was the first year I've participated, and I really enjoyed all the challeng
         <td>1527</td>
         <td>0</td>
     </tr>
-    <tr style="text-align:right">
+    <tr align="right">
         <td>25</td>
         <td>02:06:37</td>
         <td>4137</td>
